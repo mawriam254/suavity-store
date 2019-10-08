@@ -1,0 +1,138 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: #e84118;
+    
+}
+
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover > .search-txt {
+width: 240px;
+padding: 0% 6px;
+}
+
+.search-box:hover > .search-btn {
+    background: white;
+    
+    }
+
+    .search-btn{
+        color: #e84118;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #2f3640;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-bar{
+        background: rgb(100, 0, 25);
+        text-align: center;
+    
+    }
+    
+    .menu-bar ul{
+        display: inline-flex;
+        list-style: none;
+        color: aliceblue;
+    
+    }
+    
+    .menu-bar ul li{
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+    }
+    
+    .menu-bar ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .active, .menu-bar ul li:hover{
+    background-color: #ab120d;
+    border-radius: 3px;
+    }
+    
+    .menu-bar .fa{
+        margin-right: 8px;
+    
+    }
+    
+    .sub-menu-1{
+        display: none;
+    }
+    
+    .menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(100, 0, 5);
+    margin-top: 15px;
+    margin-left:-15px;
+    }
+    
+    .menu-bar ul li:hover .sub-menu-1 ul{
+        display: block;
+        margin: 10px;
+    }
+    
+    
+    
+    .menu-bar ul li:hover .sub-menu-1 ul li{
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+    }
+    
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+        border-bottom: none;
+    }
+    
+    .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+        color: #ce0f0fd3;
+    }
+    
+    .fa-angle-right{
+        float: right;
+    }
+    
+    .sub-menu-2{
+        display: none;
+    }
+    
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 140px;
+        background: rgb(100, 0, 5);
+    }
+
+
+.search-txt{
+    border: none;
+    background: none;
+    outline:none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition:  0.4s;
+    line-height: 40px;
+    width:0px;
+}
